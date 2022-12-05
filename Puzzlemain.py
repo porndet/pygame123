@@ -7,7 +7,7 @@ import tkinter
 import tkinter.filedialog
 import time
 import cv2
-
+# print(1111111111111111111111111111111111111)
 def prompt_file():
     top = tkinter.Tk()
     top.withdraw()
@@ -169,10 +169,10 @@ while running:
             game_screen = False
             screen.fill(BLACK) 
             screen.blit(bg2,(250,0))
-            screen.blit(play_agin_text,play_agin_rect)
-            screen.blit(complet1_text,(850,480))
-            screen.blit(Exit3_text,(850,480))
-            screen.blit(SlidingPuzzle_text,(670,400))
+            screen.blit(play_agin_text,(540,750))
+            screen.blit(complet1_text,(340,750))
+            screen.blit(Exit3_text,(1050,750))
+            screen.blit(SlidingPuzzle_text,(810,750))
             if game_over:
                 keys = pygame.key.get_pressed()
                 if keys[pygame.K_SPACE]:
